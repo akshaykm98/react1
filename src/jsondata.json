@@ -1,0 +1,76 @@
+{
+    "listData": [
+     {
+       "paymentNetwork": "FTS",
+       "chargesIdentifier": "RETAIL_FTS",
+       "description": "",
+       "feeId": "567",
+       "segmentType": "RETAIL",
+       "status": "ACTIVE"
+     },
+     {
+       "paymentNetwork": "AF",
+       "chargesIdentifier": "MENTP_AF",
+       "description": "",
+       "feeId": "571",
+       "segmentType": "MENTP",
+       "status": "ACTIVE"
+     },
+     {
+       "paymentNetwork": "FTS",
+       "chargesIdentifier": "IMS_DFLT_FTS",
+       "description": "",
+       "feeId": "580",
+       "segmentType": "MENTP",
+       "status": "ACTIVE"
+     },
+     {
+       "paymentNetwork": "FTS",
+       "chargesIdentifier": "fasf",
+       "description": "safsa",
+       "feeId": "589",
+       "segmentType": "STAFF",
+       "status": "ACTIVE"
+     },
+     {
+       "paymentNetwork": "FTS",
+       "chargesIdentifier": "MENTP_FTS",
+       "description": "",
+       "feeId": "624",
+       "segmentType": "MENTP",
+       "status": "ACTIVE"
+     },
+     {
+       "paymentNetwork": "FTS",
+       "chargesIdentifier": "MENTP_FTS",
+       "description": "",
+       "feeId": "626",
+       "segmentType": "MENTP",
+       "status": "ACTIVE"
+     },
+     {
+       "paymentNetwork": "SWIFT",
+       "chargesIdentifier": "IMS_DFLT_SWIFT",
+       "description": "",
+       "feeId": "646",
+       "segmentType": "IMS_DFLT",
+       "status": "ACTIVE"
+     },
+     {
+       "paymentNetwork": "SWIFT",
+       "chargesIdentifier": "MENTP_SWIFT",
+       "description": "",
+       "feeId": "647",
+       "segmentType": "MENTP",
+       "status": "ACTIVE"
+     },
+     {
+       "paymentNetwork": "INTER",
+       "chargesIdentifier": "t1",
+       "description": "",
+       "feeId": "656",
+       "segmentType": "CORP",
+       "status": "ACTIVE"
+     }
+   ]
+ }

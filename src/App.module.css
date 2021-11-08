@@ -1,0 +1,113 @@
+import "./App.css";
+import {Table} from "react-bootstrap";
+
+function App() {
+  const data = {
+    listData: [
+      {
+        paymentNetwork: "FTS",
+        chargesIdentifier: "RETAIL_FTS",
+        description: "",
+        feeId: "567",
+        segmentType: "RETAIL",
+        status: "ACTIVE",
+      },
+      {
+        paymentNetwork: "AF",
+        chargesIdentifier: "MENTP_AF",
+        description: "",
+        feeId: "571",
+        segmentType: "MENTP",
+        status: "ACTIVE",
+      },
+      {
+        paymentNetwork: "FTS",
+        chargesIdentifier: "IMS_DFLT_FTS",
+        description: "",
+        feeId: "580",
+        segmentType: "MENTP",
+        status: "ACTIVE",
+      },
+      {
+        paymentNetwork: "FTS",
+        chargesIdentifier: "fasf",
+        description: "safsa",
+        feeId: "589",
+        segmentType: "STAFF",
+        status: "ACTIVE",
+      },
+      {
+        paymentNetwork: "FTS",
+        chargesIdentifier: "MENTP_FTS",
+        description: "",
+        feeId: "624",
+        segmentType: "MENTP",
+        status: "ACTIVE",
+      },
+      {
+        paymentNetwork: "FTS",
+        chargesIdentifier: "MENTP_FTS",
+        description: "",
+        feeId: "626",
+        segmentType: "MENTP",
+        status: "ACTIVE",
+      },
+      {
+        paymentNetwork: "SWIFT",
+        chargesIdentifier: "IMS_DFLT_SWIFT",
+        description: "",
+        feeId: "646",
+        segmentType: "IMS_DFLT",
+        status: "ACTIVE",
+      },
+      {
+        paymentNetwork: "SWIFT",
+        chargesIdentifier: "MENTP_SWIFT",
+        description: "",
+        feeId: "647",
+        segmentType: "MENTP",
+        status: "ACTIVE",
+      },
+      {
+        paymentNetwork: "INTER",
+        chargesIdentifier: "t1",
+        description: "",
+        feeId: "656",
+        segmentType: "CORP",
+        status: "ACTIVE",
+      },
+    ],
+  };
+  const renderData =(data,index) => {
+  return (
+    <tr key={index}>
+            <td>{item.paymentNetwork}</td>
+            <td>{item.chargesIdentifier}</td>
+            <td>{item.description}</td>
+            <td>{item.feeId}</td>
+            <td>{item.segmentType}</td>
+            <td>{item.status}</td>
+    </tr>
+  )}
+  return(
+    <div className="App">
+<Table striped bordered hover>
+  <thead>
+    <tr>
+      <th>PaymentNetwork</th>
+      <th>ChargesIdentifier</th>
+      <th>Description</th>
+      <th>FeeId</th>
+      <th>SegmentType</th>
+      <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+      {data.map(renderData)}
+  </tbody>
+  </Table>
+    </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,337 @@
+
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    background: #f1f1f1;
+    margin: 400px auto 0;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .container-heading{
+    padding-top: 5px;
+  }
+  .bloc-tabs {
+   
+    display: flex;
+  }
+  .tabs {
+    background-color: #404040;
+    padding: 2px;
+    color: #f1f1f1;
+    text-align: center;
+    width: 50%;
+    font-size: 12PX;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+  }
+  .tabs:not(:last-child){
+    border-right: 1px solid rgba(0, 0, 0, 0.274);
+  }
+  
+  .active-tabs  {
+    background: white;
+    color: #404040;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 2px;
+    
+  }
+  
+  
+  
+  button {
+    border: none;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+    background: #f1f1f1;
+    padding: 0px;
+    width: 100%;
+    height: 50px;
+    display: none;
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  }
+
+
+
+  
+.App{
+    position: absolute;
+    left: 175px;
+    top:0px;
+    width: 1320px;
+}
+
+th{
+    color: #f1f1f1;
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.data{
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    color:#707070;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+Table{
+    border:1;
+}
+.button{
+  
+  position: absolute;
+  top:360px;
+  left:200px;
+}
+.add{
+  background-color: green;
+  color: #f1f1f1;
+}
+.edit{
+  background-color: orange;
+  color: #f1f1f1;
+}
+.delete{
+  background-color: red;
+  color: #f1f1f1;
+}
+label{
+  position: relative;
+  bottom:3px;
+  left:2px;
+}
+.heading{
+  height:40px;
+ text-align: center;
+ background-color: #333;
+ 
+
+}
+.topcentre{
+  flex: 2;
+  
+}
+.toplist{
+  height: 20px;
+  background-color: #F1F1F1;
+  display: flex;
+ justify-content: center;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+  
+  
+}
+.toplistitem{
+  margin-right: 70px;
+  font-weight: 100;
+  font-size: 10px;
+}
+.toplist1{
+  height: 20px;
+  background-color: #F1F1F1;
+  
+ 
+ margin: 0;
+ padding: 0;
+ list-style: none;
+  
+}
+.toplistitem121{
+  
+  position: absolute;
+  left: 50px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem122{
+  
+  position: absolute;
+  left: 200px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem123{
+  
+  position: absolute;
+  left: 350px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem124{
+  position: absolute;
+  left: 500px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem12{
+  position: absolute;
+  left: 700px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem13{
+  position: absolute;
+  left: 1000px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.toplist2{
+  height: 20px;
+  background-color: #F1F1F1;
+  display: flex;
+ justify-content: right;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+  
+}
+.toplistitem2{
+  margin-right: 50px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplist3{
+  height: 20px;
+  background-color: #f1f1f1;
+  display: flex;
+ justify-content:left;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+  
+}
+.toplistitem3{
+  position: absolute;
+  left:50px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem4{
+  position: absolute;
+  left:200px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem5{
+  position: absolute;
+  left:350px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem6{
+  position: absolute;
+  left:500px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem7{
+  position: absolute;
+  left:600px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem8{
+  position: absolute;
+  left:700px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem9{
+  position: absolute;
+  left:800px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem10{
+  position: absolute;
+  left:900px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem11{
+  position: absolute;
+  left:1000px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem12{
+  position: absolute;
+  left:1100px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem13{
+  position: absolute;
+  left:1200px;
+  font-weight: bold;
+  font-size: 10px;
+}
+.toplistitem14{
+  position: absolute;
+  left:1300px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+
+
+
+/* {
+  listData: [
+    {
+      Default: "Default",
+      Custom: "Custom",
+      segmentType: "segmentType",
+      paymentNetwork: "paymentNetwork",
+      Description: "Description",
+      status: "TRACK STATUS",
+    },
+  ],
+  F2F: [
+    {
+      Default: "Channel*",
+      Custom: "Purpose*",
+      segmentType: "CustomTag",
+      paymentNetwork: "Tier",
+      Description: "Fees",
+    },
+  ],
+}; */
